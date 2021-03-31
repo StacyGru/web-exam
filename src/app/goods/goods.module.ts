@@ -8,13 +8,15 @@ import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoryNamePipe } from 'src/app/shared/pipes/category-name.pipe';
+import { SortPipe } from 'src/app/shared/pipes/sort.pipe';
 
 @NgModule({
   declarations: [
       GoodsComponent,
       ListComponent,
       EditComponent,
-      CategoryNamePipe
+      CategoryNamePipe,
+      SortPipe
     ],
   imports: [
       CommonModule, 

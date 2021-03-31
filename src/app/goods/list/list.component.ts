@@ -12,8 +12,8 @@ export class ListComponent implements OnInit {
 
   goods: MyGoods[];
   // searchStr = '';
-  // column = "byid";
-  // reverse = false;
+  column = "byprice";
+  reverse = false;
   
   constructor(
     private HttpGoodsService: HttpGoodsService, 

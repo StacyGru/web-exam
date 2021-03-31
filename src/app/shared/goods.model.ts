@@ -3,7 +3,7 @@ export interface MyGoods
     id?: number;
     article: string;
     name: string;
-    price: string;
+    price: number;
     category: number;
     weight: string;
     amount: number;

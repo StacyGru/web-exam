@@ -17,7 +17,7 @@ export class AppComponent {
   {
     id: 0,
     name: '',
-    price: '',
+    price: 0,
     category: 0,
     weight: '',
     amount: 0
