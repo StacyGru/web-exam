@@ -34,10 +34,10 @@ export class EditComponent implements OnInit {
       article: new FormControl(null, [Validators.required]),
       name: new FormControl(null, [Validators.required]),
       price: new FormControl(null, [Validators.required]),
-      category: new FormControl(null, [Validators.required]),
+      category: new FormControl(0, [Validators.required]),
       weight: new FormControl(null, [Validators.required]),
-      amount: new FormControl(null, [Validators.required]),
-      manufacturer: new FormControl(0, [Validators.required])
+      amount: new FormControl(0, [Validators.required]),
+      manufacturer: new FormControl(null, [Validators.required])
     });
     this.getData();
   }

@@ -57,7 +57,7 @@
         <tr *ngFor="let good of goods">
           <td class="align-middle">{{ good.name }}</td>
           <td class="align-middle">{{ good.price }}</td>
-          <td class="align-middle">{{ good.category }}</td>
+          <td class="align-middle">{{ good.category | categoryName }}</td>
           <td class="align-middle">{{ good.weight }}</td>
           <td class="align-middle">{{ good.amount }}</td>
           <td class="align-middle">

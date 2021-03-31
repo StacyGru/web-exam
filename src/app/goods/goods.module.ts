@@ -7,12 +7,14 @@ import { GoodsComponent } from './goods.component';
 import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoryNamePipe } from 'src/app/shared/pipes/category-name.pipe';
 
 @NgModule({
   declarations: [
       GoodsComponent,
       ListComponent,
-      EditComponent
+      EditComponent,
+      CategoryNamePipe
     ],
   imports: [
       CommonModule, 

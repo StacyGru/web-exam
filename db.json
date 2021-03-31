@@ -1,14 +1,14 @@
 {
   "goods": [
     {
-      "id": 2,
       "article": "286759",
-      "name": "диван",
+      "name": "диван2",
       "price": "8000",
       "category": 0,
       "weight": "15",
       "amount": "30",
-      "manufacturer": "Планета мебели"
+      "manufacturer": "Планета мебели",
+      "id": 2
     },
     {
       "id": 2,
@@ -39,6 +39,16 @@
       "weight": "0,5",
       "amount": 20,
       "manufacturer": "Apple"
+    },
+    {
+      "article": "245689",
+      "name": "шкаф",
+      "price": "15000",
+      "category": 0,
+      "weight": "20",
+      "amount": 15,
+      "manufacturer": "Мир Мебели",
+      "id": 5
     }
   ]
 }

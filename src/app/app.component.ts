@@ -111,10 +111,10 @@ export class AppComponent {
     }
   }
 
-  // getByType(category: number)
-  // {
-  //   return this.goods.filter((good) => good.category === category);
-  // }
+  getByCategory(category: number)
+  {
+    return this.goods.filter((good) => good.category === category);
+  }
 
   onEditById(id: number)
   {
