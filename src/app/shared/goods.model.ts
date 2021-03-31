@@ -6,7 +6,7 @@ export interface MyGoods
     price: string;
     category: number;
     weight: string;
-    amount: string;
+    amount: number;
     manufacturer?: string;
 }
 

@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { InfoComponent } from './info/info.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DepartmentNamePipe } from './shared/pipes/department-name.pipe';
+import { CategoryNamePipe } from './shared/pipes/category-name.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoComponent,
-    HeaderComponent
+    HeaderComponent,
+    DepartmentNamePipe,
+    CategoryNamePipe
   ],
   imports: [
     BrowserModule,

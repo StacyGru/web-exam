@@ -5,7 +5,7 @@
       "article": "286759",
       "name": "диван",
       "price": "8000",
-      "category": 1,
+      "category": 0,
       "weight": "15",
       "amount": "30",
       "manufacturer": "Планета мебели"
@@ -15,9 +15,9 @@
       "article": "689412",
       "name": "телевизор",
       "price": "20000",
-      "category": 2,
+      "category": 1,
       "weight": "3",
-      "amount": "15",
+      "amount": 15,
       "manufacturer": "Samsung"
     },
     {
@@ -25,9 +25,9 @@
       "article": "578691",
       "name": "Мастер и Маргарита",
       "price": "300",
-      "category": 3,
+      "category": 2,
       "weight": "0,2",
-      "amount": "100",
+      "amount": 100,
       "manufacturer": "Читай-Город"
     },
     {
@@ -35,9 +35,9 @@
       "article": "813678",
       "name": "iPhone 12",
       "price": "100000",
-      "category": 4,
+      "category": 3,
       "weight": "0,5",
-      "amount": "20",
+      "amount": 20,
       "manufacturer": "Apple"
     }
   ]

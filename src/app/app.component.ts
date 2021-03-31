@@ -20,7 +20,7 @@ export class AppComponent {
     price: '',
     category: 1,
     weight: '',
-    amount: ''
+    amount: 0
   };
   // searchStr = '';
 
