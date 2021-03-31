@@ -1,0 +1,79 @@
+<div class="container-fluid container-md">
+
+    <!-- <div class="row my-3">
+
+      <div class="col-12">
+        <h5>Фильтр по имени и фамилии</h5>
+        <input type="search" class="form-control my-1" placeholder="Имя и/или фамилия"
+        style="width: 300px;"
+        [(ngModel)]="searchStr"/>
+      </div>
+
+    </div>
+
+    <div class="row my-3">
+
+      <div class="col-12">
+      <h5>Сортировать по</h5>
+      </div>
+
+      <div class="col-2">
+        <select class="form-control my-1"
+        [(ngModel)]="column"
+        style="width: 120px;">
+        <option value="byid">id</option>
+        <option value="byage">возрасту</option>
+        </select>
+      </div>
+
+      <div class="col-4 align-self-center">
+        <input type="checkbox" id="reverse"
+        [(ngModel)]="reverse"
+        class="mr-2">
+        <label for="reverse">от большего к меньшему </label>
+      </div>
+
+    </div> -->
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="align-middle">Название</th>
+          <th scope="col" class="align-middle">Цена, руб.</th>
+          <th scope="col" class="align-middle">Категория</th>
+          <th scope="col" class="align-middle">Вес, кг.</th>
+          <th scope="col" class="align-middle">Количество на складе, шт.</th>
+          <th scope="col" class="align-middle"></th>
+          <th scope="col" class="align-middle">
+            <button class="btn btn-warning"
+            (click)="onAddProfile()">
+              Добавить товар
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let good of goods">
+          <td class="align-middle">{{ good.name }}</td>
+          <td class="align-middle">{{ good.price }}</td>
+          <td class="align-middle">{{ good.category }}</td>
+          <td class="align-middle">{{ good.weight }}</td>
+          <td class="align-middle">{{ good.amount }}</td>
+          <td class="align-middle">
+              <button class="btn btn-outline-danger" 
+            (click)="onDelete(good.id)"
+            >Удалить
+            </button>
+            </td>
+          <td class="align-middle">
+            <button class="btn btn-outline-primary"
+            (click)="onLinkProfile(good.id)">
+              Редактировать
+            </button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
