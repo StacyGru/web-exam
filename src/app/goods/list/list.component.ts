@@ -11,9 +11,10 @@ import { HttpGoodsService } from 'src/app/shared/services/http-goods.service';
 export class ListComponent implements OnInit {
 
   goods: MyGoods[];
-  // searchStr = '';
   column = "byprice";
   reverse = false;
+  avaliable = false;
+  category_filter: undefined;
   
   constructor(
     private HttpGoodsService: HttpGoodsService, 

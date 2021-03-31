@@ -36,7 +36,7 @@ export class EditComponent implements OnInit {
       price: new FormControl(null, [Validators.required]),
       category: new FormControl(0, [Validators.required]),
       weight: new FormControl(null, [Validators.required]),
-      amount: new FormControl(0, [Validators.min(1), Validators.required]),
+      amount: new FormControl(0, [Validators.min(0), Validators.required]),
       manufacturer: new FormControl(null)
     });
     this.getData();

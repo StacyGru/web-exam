@@ -1,15 +1,30 @@
 <div class="container-fluid container-md">
 
-    <!-- <div class="row my-3"> -->
+  <div class="row my-3">
 
-      <!-- <div class="col-12">
-        <h5>Фильтр по имени и фамилии</h5>
-        <input type="search" class="form-control my-1" placeholder="Имя и/или фамилия"
-        style="width: 300px;"
-        [(ngModel)]="searchStr"/>
-      </div>
+    <div class="col-12">
+      <h5>Фильтры</h5>
+    </div>
 
-    </div> -->
+    <div class="col-3 align-self-center">
+      <input type="checkbox" id="avaliable"
+      [(ngModel)]="avaliable"
+      class="mr-2">
+      <label for="avaliable">в наличии</label>
+    </div>
+
+    <div class="col-3">
+      <select class="form-control my-1"
+      [(ngModel)]="category_filter"
+      style="width: 150px;">
+      <option value="0">Мебель</option>
+      <option value="1">Техника</option>
+      <option value="2">Книги</option>
+      <option value="3">Телефоны</option>
+      </select>
+    </div>
+      
+  </div>
 
     <div class="row my-3">
 
@@ -54,7 +69,7 @@
       </thead>
       <tbody>
 
-        <tr *ngFor="let good of goods | sort : column : reverse">
+        <tr *ngFor="let good of goods | sort : column : reverse | filter : avaliable | filter2 : category_filter">
           <td class="align-middle">{{ good.name }}</td>
           <td class="align-middle">{{ good.price }}</td>
           <td class="align-middle">{{ good.category | categoryName }}</td>

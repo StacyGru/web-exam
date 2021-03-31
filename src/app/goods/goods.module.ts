@@ -9,6 +9,8 @@ import { EditComponent } from './edit/edit.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoryNamePipe } from 'src/app/shared/pipes/category-name.pipe';
 import { SortPipe } from 'src/app/shared/pipes/sort.pipe';
+import { FilterPipe } from 'src/app/shared/pipes/filter.pipe';
+import { Filter2Pipe } from 'src/app/shared/pipes/filter2.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SortPipe } from 'src/app/shared/pipes/sort.pipe';
       ListComponent,
       EditComponent,
       CategoryNamePipe,
-      SortPipe
+      SortPipe,
+      FilterPipe,
+      Filter2Pipe
     ],
   imports: [
       CommonModule, 

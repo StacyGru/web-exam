@@ -39,6 +39,16 @@
       "amount": 15,
       "manufacturer": "Мир Мебели",
       "id": 5
+    },
+    {
+      "article": "154654",
+      "name": "nkjn",
+      "price": "jnkjnj",
+      "category": 0,
+      "weight": "jnk",
+      "amount": 0,
+      "manufacturer": null,
+      "id": 6
     }
   ]
 }
