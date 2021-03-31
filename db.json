@@ -1,16 +1,6 @@
 {
   "goods": [
     {
-      "article": "286759",
-      "name": "диван2",
-      "price": "8000",
-      "category": 0,
-      "weight": "15",
-      "amount": "30",
-      "manufacturer": "Планета мебели",
-      "id": 2
-    },
-    {
       "id": 2,
       "article": "689412",
       "name": "телевизор",
@@ -21,14 +11,14 @@
       "manufacturer": "Samsung"
     },
     {
-      "id": 3,
       "article": "578691",
       "name": "Мастер и Маргарита",
-      "price": "300",
+      "price": "350",
       "category": 2,
       "weight": "0,2",
       "amount": 100,
-      "manufacturer": "Читай-Город"
+      "manufacturer": "Читай-Город",
+      "id": 3
     },
     {
       "id": 4,

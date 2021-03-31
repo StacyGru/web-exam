@@ -18,7 +18,7 @@ export class AppComponent {
     id: 0,
     name: '',
     price: '',
-    category: 1,
+    category: 0,
     weight: '',
     amount: 0
   };
@@ -111,10 +111,10 @@ export class AppComponent {
     }
   }
 
-  getByCategory(category: number)
-  {
-    return this.goods.filter((good) => good.category === category);
-  }
+  // getByCategory(category: number)
+  // {
+  //   return this.goods.filter((good) => good.category === category);
+  // }
 
   onEditById(id: number)
   {
